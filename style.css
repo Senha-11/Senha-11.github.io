@@ -1,43 +1,111 @@
-body {
-  font-family: Arial;
+* {
   margin: 0;
-  background: #f4f4f4;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+background: #0f172a;
+color: #fff;
 }
 
-header {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
-  text-align: center;
-  padding: 40px;
+/* HERO */
+.hero {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: radial-gradient(circle at top, #1e3a8a, #020617);
 }
 
-nav {
-  background: #333;
-  padding: 10px;
-  text-align: center;
+.hero h1 {
+font-size: 3.5rem;
 }
 
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
+.subtitle {
+margin-top: 10px;
+color: #cbd5f5;
 }
 
-section {
-  padding: 20px;
+.btn {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 25px;
+background: #3b82f6;
+color: white;
+border-radius: 25px;
+text-decoration: none;
+transition: 0.3s;
 }
 
+.btn:hover {
+background: #2563eb;
+transform: scale(1.05);
+}
+
+/* NAVBAR */
+.navbar {
+position: sticky;
+top: 0;
+background: rgba(15, 23, 42, 0.8);
+backdrop-filter: blur(10px);
+padding: 15px;
+text-align: center;
+}
+
+.navbar a {
+margin: 0 15px;
+color: #cbd5f5;
+text-decoration: none;
+font-weight: 500;
+}
+
+.navbar a:hover {
+color: white;
+}
+
+/* SECTION */
+.section {
+padding: 70px 10%;
+}
+
+.section h2 {
+margin-bottom: 25px;
+font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+
+/* CARD */
 .card {
-  background: white;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+background: #1e293b;
+padding: 20px;
+border-radius: 15px;
+transition: 0.3s;
 }
 
+.card.hover:hover {
+transform: translateY(-10px);
+background: #334155;
+}
+
+/* GLASS EFFECT */
+.glass {
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(15px);
+border-radius: 15px;
+}
+
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+text-align: center;
+padding: 20px;
+color: #94a3b8;
 }
