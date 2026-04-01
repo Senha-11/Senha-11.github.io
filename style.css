@@ -15,7 +15,7 @@ color: #fff;
 display: flex;
 justify-content: space-between;
 padding: 20px 10%;
-background: rgba(0,0,0,0.6);
+background: rgba(0,0,0,0.7);
 position: sticky;
 top: 0;
 backdrop-filter: blur(10px);
@@ -33,28 +33,49 @@ color: #38bdf8;
 
 /* HERO */
 .hero {
-height: 90vh;
 display: flex;
+justify-content: space-between;
 align-items: center;
-padding: 0 10%;
+padding: 80px 10%;
 }
 
-.hero h1 {
-font-size: 3rem;
+.hero-left {
+max-width: 50%;
 }
 
 .hero span {
 color: #38bdf8;
 }
 
+.role {
+margin-top: 10px;
+color: #cbd5f5;
+}
+
+.desc {
+margin: 15px 0;
+color: #94a3b8;
+}
+
+.hero-right img {
+width: 260px;
+border-radius: 50%;
+border: 4px solid #38bdf8;
+}
+
+/* BUTTON */
 .btn {
 display: inline-block;
-margin-top: 20px;
 padding: 10px 20px;
 background: #38bdf8;
 color: black;
-border-radius: 25px;
+border-radius: 20px;
 text-decoration: none;
+transition: 0.3s;
+}
+
+.btn:hover {
+transform: scale(1.05);
 }
 
 /* SECTION */
@@ -67,23 +88,21 @@ margin-bottom: 20px;
 }
 
 /* SKILLS */
-.skills-container {
+.skills-grid {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 gap: 20px;
 }
 
-.skill-box {
+.skill-card {
 background: #0f172a;
 padding: 20px;
 border-radius: 10px;
+transition: 0.3s;
 }
 
-/* TIMELINE */
-.timeline-item {
-background: #0f172a;
-padding: 20px;
-border-left: 4px solid #38bdf8;
+.skill-card:hover {
+transform: translateY(-5px);
 }
 
 /* GRID */
@@ -103,6 +122,13 @@ transition: 0.3s;
 
 .card:hover {
 transform: translateY(-8px);
+}
+
+/* TIMELINE */
+.timeline-item {
+background: #0f172a;
+padding: 20px;
+border-left: 4px solid #38bdf8;
 }
 
 /* FOOTER */
