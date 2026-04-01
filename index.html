@@ -10,7 +10,12 @@
 
   <!-- Google Font -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -31,10 +36,18 @@
 <!-- HERO -->
 
 <header class="hero">
-  <div class="hero-text">
+  <div class="hero-left">
     <h1>Hello, I'm <span>Sneha</span></h1>
-    <p>BCA Graduate • Full Stack Developer</p>
+    <p class="role">BCA Graduate • Full Stack Developer</p>
+    <p class="desc">
+      Passionate about building scalable web applications, REST APIs, and solving 
+      real-world problems using clean and efficient code.
+    </p>
     <a href="#projects" class="btn">View Projects</a>
+  </div>
+
+  <div class="hero-right">
+    <img src="profile.jpg" alt="Sneha Profile">
   </div>
 </header>
 
@@ -43,36 +56,64 @@
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    I am a passionate BCA graduate with strong interest in web development and backend systems. 
-    I enjoy building scalable applications using modern technologies and solving real-world problems.
+    I am a BCA graduate with strong foundations in programming and web development. 
+    I have experience in building backend APIs, working with databases, and creating 
+    responsive web interfaces. I am a quick learner and always eager to explore new 
+    technologies to improve my skills.
   </p>
 </section>
 
 <!-- SKILLS -->
 
 <section id="skills" class="section">
-  <h2>Skills</h2>
+  <h2>Technical Skills</h2>
 
-  <div class="skills-container">
-    <div class="skill-box">
-      <h3>Programming</h3>
-      <p>C, C++, Java, Python, JavaScript</p>
-    </div>
+  <div class="skills-grid">
 
 ```
-<div class="skill-box">
-  <h3>Web Development</h3>
-  <p>HTML, CSS, Node.js, Express.js</p>
+<div class="skill-card">
+  <h3><i class="fa-solid fa-c"></i> C / C++</h3>
+  <p>Learned core programming, pointers, memory management, and problem solving.</p>
 </div>
 
-<div class="skill-box">
-  <h3>Database</h3>
-  <p>MySQL, MongoDB</p>
+<div class="skill-card">
+  <h3><i class="fa-brands fa-java"></i> Java</h3>
+  <p>Understood OOP concepts like inheritance, polymorphism, abstraction.</p>
 </div>
 
-<div class="skill-box">
-  <h3>Tools & Concepts</h3>
-  <p>Git, Postman, DBMS, OOPs, REST APIs</p>
+<div class="skill-card">
+  <h3><i class="fa-brands fa-python"></i> Python</h3>
+  <p>Used for scripting and NLP-based projects like Resume Analyzer.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-brands fa-js"></i> JavaScript</h3>
+  <p>Handled DOM manipulation, events, and dynamic UI features.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+  <p>Built structured and semantic web pages.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-brands fa-css3-alt"></i> CSS</h3>
+  <p>Designed responsive layouts using Flexbox and Grid.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-brands fa-node-js"></i> Node.js</h3>
+  <p>Built backend systems and REST APIs.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-solid fa-server"></i> Express.js</h3>
+  <p>Handled routing, middleware, and API structure.</p>
+</div>
+
+<div class="skill-card">
+  <h3><i class="fa-solid fa-database"></i> Databases</h3>
+  <p>Worked with MySQL and MongoDB for data storage and queries.</p>
 </div>
 ```
 
@@ -84,15 +125,13 @@
 <section id="experience" class="section">
   <h2>Experience</h2>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>Web Development Intern</h3>
-      <span>ABC Tech Solutions • 2 Months</span>
-      <p>
-        Worked on frontend UI and backend APIs. Gained hands-on experience 
-        in building responsive websites and RESTful services.
-      </p>
-    </div>
+  <div class="timeline-item">
+    <h3>Web Development Intern</h3>
+    <span>ABC Tech Solutions • 2 Months</span>
+    <p>
+      Built frontend UI and backend APIs, worked with real-world projects, 
+      and improved debugging and development workflow skills.
+    </p>
   </div>
 </section>
 
@@ -106,17 +145,17 @@
 ```
 <div class="card">
   <h3>E-Commerce REST API</h3>
-  <p>Built scalable backend using Node.js & Express with CRUD operations.</p>
+  <p>Developed backend system with CRUD operations using Node.js and Express.</p>
 </div>
 
 <div class="card">
   <h3>Bus Booking System</h3>
-  <p>Developed API for booking tickets and managing seat availability.</p>
+  <p>Created booking API with seat management and validation features.</p>
 </div>
 
 <div class="card">
   <h3>Resume Analyzer</h3>
-  <p>Used Python and NLP to extract and match skills from resumes.</p>
+  <p>Used Python and NLP techniques to analyze resumes and match skills.</p>
 </div>
 ```
 
@@ -131,13 +170,13 @@
   <div class="grid">
     <div class="card">
       <h3>Smart India Hackathon</h3>
-      <p>Participated and built a Job Recommendation System using Python.</p>
+      <p>Built job recommendation system using Python and ML basics.</p>
     </div>
 
 ```
 <div class="card">
   <h3>Academic Excellence</h3>
-  <p>Scored 88% in BCA and maintained consistent academic performance.</p>
+  <p>Scored 88% in BCA and maintained strong academic performance.</p>
 </div>
 ```
 
@@ -151,6 +190,8 @@
   <p>Email: sneha.houshetti@email.com</p>
   <p>Phone: +91 98765 43210</p>
 </section>
+
+<!-- FOOTER -->
 
 <footer>
   <p id="year"></p>
