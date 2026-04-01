@@ -1,1 +1,2 @@
-document.getElementById("year").innerText = "© " + new Date().getFullYear() + " Sneha Houshetti";
+document.getElementById("year").innerText =
+"© " + new Date().getFullYear() + " Sneha Houshetti";
