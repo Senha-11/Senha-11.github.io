@@ -1,2 +1,8 @@
-document.getElementById("year").innerText =
-  "© " + new Date().getFullYear() + " Sneha Houshetti";
+// Smooth scrolling
+document.querySelectorAll("a").forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
