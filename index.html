@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneha Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav>
-    <h2>Sneha</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Sneha</h2>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
 
-<!-- Home -->
-<section id="home">
-    <div class="home-content">
-        <h1>Hello, I'm Sneha</h1>
-        <h3>Aspiring Software Developer</h3>
-        <p>I am a BCA student passionate about programming and web development.</p>
-        <button>Hire Me</button>
-    </div>
-    <div class="home-img">
-        <div class="img-box">Your Photo</div>
-    </div>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Sneha</span></h1>
+    <h3>Aspiring Software Developer</h3>
+    <p>BCA student passionate about programming and building real-world applications.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+  <div class="hero-img">
+    <div class="img-box">Your Photo</div>
+  </div>
 </section>
 
 <!-- About -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a BCA student with interest in programming and web development.
-        I have knowledge of C programming, DBMS, and basic web technologies.
-        Currently learning Node.js and MongoDB.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    I am a BCA student with interest in programming and web development.
+    I have knowledge of C programming, DBMS, and web technologies.
+    Currently learning Node.js and MongoDB.
+  </p>
 </section>
 
 <!-- Skills -->
 <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>C Programming</li>
-        <li>Python (Basic)</li>
-        <li>JavaScript (Basic)</li>
-        <li>HTML, CSS</li>
-        <li>DBMS</li>
-        <li>Embedded Systems (Basics)</li>
-    </ul>
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>C Programming</p>
+    <div class="bar"><span style="width: 85%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="bar"><span style="width: 70%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><span style="width: 65%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>HTML & CSS</p>
+    <div class="bar"><span style="width: 90%"></span></div>
+  </div>
+
 </section>
 
 <!-- Projects -->
 <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Online Quiz Application</h3>
-        <p>Built using HTML, CSS, JavaScript, Python. Stores user scores in Excel.</p>
-    </div>
+  <div class="project-card">
+    <h3>Online Quiz Application</h3>
+    <p>Built using HTML, CSS, JavaScript, Python. Stores scores in Excel.</p>
+  </div>
 
-    <div class="project">
-        <h3>C Programming Practice Programs</h3>
-        <p>Includes factorial, max number, and array operations.</p>
-    </div>
+  <div class="project-card">
+    <h3>C Programming Practice</h3>
+    <p>Includes factorial, max number, and array operations.</p>
+  </div>
+
 </section>
 
 <!-- Certifications -->
 <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Yuva AI for All</li>
-        <li>Basics of Python</li>
-        <li>Introduction to Computer Architecture</li>
-        <li>Introduction to Modern AI</li>
-        <li>Programming in C</li>
-    </ul>
+  <h2>Certifications</h2>
+  <ul>
+    <li>Yuva AI for All</li>
+    <li>Basics of Python</li>
+    <li>Introduction to Computer Architecture</li>
+    <li>Introduction to Modern AI</li>
+    <li>Programming in C</li>
+  </ul>
 </section>
 
 <!-- Contact -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Phone: _________</p>
-    <p>Email: _________</p>
-    <p>GitHub: _________</p>
+  <h2>Contact</h2>
+  <p>Phone: _________</p>
+  <p>Email: _________</p>
+  <p>GitHub: _________</p>
 </section>
 
 <script src="script.js"></script>
