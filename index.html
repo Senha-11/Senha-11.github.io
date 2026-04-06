@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +20,7 @@
   <div class="bg-lines lines-top-right"></div>
   <div class="bg-lines lines-bottom-left"></div>
 
-  <!-- Navbar -->
+  <!-- Header -->
   <header class="header" id="header">
     <nav class="navbar container">
       <a href="#home" class="logo">Sneha</a>
@@ -35,6 +34,8 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
@@ -43,18 +44,18 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-bg"></div>
 
     <div class="container hero-content">
       <div class="hero-text reveal">
-        <p class="eyebrow">Personal Portfolio</p>
+        <p class="eyebrow">Student Digital Portfolio</p>
         <h1>Sneha</h1>
         <h2>Aspiring Software Developer</h2>
         <p class="hero-description">
-          BCA student passionate about programming, web development, and building a strong foundation in software engineering.
+          BCA student passionate about programming, web development, and continuous learning in software development.
         </p>
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">Contact Me</a>
@@ -64,11 +65,8 @@
 
       <div class="hero-profile reveal">
         <div class="frame-card">
-          <div class="profile-placeholder">
-            <div class="profile-inner">
-              <span>Profile Image</span>
-              <small>Add your photo here</small>
-            </div>
+          <div class="profile-placeholder real-profile">
+            <img src="images/profile.jpg" alt="Sneha profile photo" />
           </div>
         </div>
       </div>
@@ -79,29 +77,28 @@
     <div class="star star-3">✦</div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="section section-light" id="about">
     <div class="container split-layout">
       <div class="section-text reveal">
         <p class="section-tag">About</p>
         <h2 class="section-title">A thoughtful start in software development</h2>
         <p class="section-description">
-          I am a BCA student with a strong interest in programming and web development.
-          I have knowledge of C programming, DBMS, and basic web technologies. I enjoy
-          learning how software works and building simple, meaningful projects that improve
-          my practical understanding.
+          I am a BCA student with interest in programming and web development. I have knowledge
+          of C programming, DBMS, and basic web technologies. I enjoy learning by building
+          practical projects and improving my technical foundation step by step.
         </p>
         <p class="section-description">
-          Currently, I am expanding my skills by learning <strong>Node.js</strong> and
-          <strong>MongoDB</strong>, with the goal of becoming a confident full-stack developer
-          ready for real-world opportunities and placement roles.
+          My goal is to become a skilled software developer and build useful applications that
+          solve real problems. Currently, I am learning Node.js and MongoDB to strengthen my
+          backend development knowledge.
         </p>
       </div>
 
       <div class="section-visual reveal">
         <div class="framed-visual about-visual">
           <div class="visual-content">
-            <span>Developer Journey</span>
+            <span>Learning with purpose</span>
           </div>
         </div>
       </div>
@@ -109,15 +106,87 @@
     <div class="star section-star">✦</div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Education -->
+  <section class="section section-accent" id="education">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-tag">Education</p>
+        <h2 class="section-title">Academic background</h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <span class="edu-year">Present</span>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>
+            Currently pursuing BCA with focus on programming fundamentals, database concepts,
+            and web development basics.
+          </p>
+        </div>
+
+        <div class="education-card reveal">
+          <span class="edu-year">Academic Focus</span>
+          <h3>Core Learning Areas</h3>
+          <p>
+            C programming, DBMS, basic web technologies, computer fundamentals,
+            and practical problem-solving through mini projects and exercises.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section section-light" id="achievements">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <p class="section-tag">Achievements</p>
+        <h2 class="section-title">Learning and academic achievements</h2>
+        <p class="section-description narrow">
+          A summary of my progress, certifications, projects, and continuous technical learning journey.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card reveal">
+          <h3>Certification Courses</h3>
+          <p>
+            Completed multiple certification courses in AI, Python, C, and Computer Architecture.
+          </p>
+        </div>
+
+        <div class="highlight-card reveal">
+          <h3>Quiz Application Project</h3>
+          <p>
+            Built an Online Quiz Application using HTML, CSS, JavaScript, and Python.
+          </p>
+        </div>
+
+        <div class="highlight-card reveal">
+          <h3>Programming Practice</h3>
+          <p>
+            Practiced problem solving through C programming exercises.
+          </p>
+        </div>
+
+        <div class="highlight-card reveal">
+          <h3>Currently Learning</h3>
+          <p>
+            Currently learning Node.js and MongoDB to expand into backend development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
   <section class="section section-accent" id="projects">
     <div class="container">
       <div class="section-heading center reveal">
         <p class="section-tag">Projects</p>
-        <h2 class="section-title">Selected work and practice builds</h2>
+        <h2 class="section-title">Selected work and project snapshots</h2>
         <p class="section-description narrow">
-          A mix of academic and hands-on projects that reflect my learning in programming,
-          logic building, and web development fundamentals.
+          Practical projects that reflect my interest in programming, logic building, and user interface development.
         </p>
       </div>
 
@@ -126,8 +195,8 @@
           <div class="project-number">01</div>
           <h3>Online Quiz Application</h3>
           <p>
-            Built using HTML, CSS, JavaScript, and Python. The application allows users
-            to attempt quizzes and stores user scores in Excel for result tracking.
+            Built using HTML, CSS, JavaScript, and Python. The application allows users to
+            choose subjects, attempt quizzes, and store user scores in Excel.
           </p>
           <div class="project-tags">
             <span>HTML</span>
@@ -135,18 +204,23 @@
             <span>JavaScript</span>
             <span>Python</span>
           </div>
+
+          <div class="project-gallery">
+            <img src="images/project-quiz-home.jpg" alt="Online Quiz Application home screen" />
+            <img src="images/project-quiz-question.jpg" alt="Online Quiz Application question screen" />
+          </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-number">02</div>
           <h3>C Programming Practice Programs</h3>
           <p>
-            A collection of C programs including factorial calculation, maximum number finding,
-            and array operations to strengthen logic building and problem-solving basics.
+            A collection of basic and intermediate C programs including factorial calculation,
+            finding the maximum number, and array operations to strengthen programming logic.
           </p>
           <div class="project-tags">
             <span>C</span>
-            <span>Logic</span>
+            <span>Logic Building</span>
             <span>Arrays</span>
             <span>Practice</span>
           </div>
@@ -155,20 +229,20 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section class="section section-light" id="skills">
     <div class="container split-layout reverse-mobile">
       <div class="section-visual reveal">
         <div class="framed-visual skills-visual">
           <div class="visual-content">
-            <span>Core Skills</span>
+            <span>Growing technical foundation</span>
           </div>
         </div>
       </div>
 
       <div class="section-text reveal">
         <p class="section-tag">Skills</p>
-        <h2 class="section-title">Technical foundation with growing depth</h2>
+        <h2 class="section-title">Technical skills and learning areas</h2>
         <div class="skills-list">
           <span class="skill-pill">C Programming</span>
           <span class="skill-pill">Python (Basic)</span>
@@ -185,61 +259,107 @@
     <div class="star section-star star-right">✦</div>
   </section>
 
-  <!-- Certifications Section -->
+  <!-- Certifications -->
   <section class="section section-accent" id="certifications">
     <div class="container">
       <div class="section-heading reveal">
         <p class="section-tag">Certifications</p>
-        <h2 class="section-title">Courses and learning milestones</h2>
+        <h2 class="section-title">Certificates and course completions</h2>
       </div>
 
       <div class="certification-list">
         <div class="cert-item reveal">
           <span class="cert-index">01</span>
-          <p>Yuva AI for All</p>
+          <div>
+            <p>Yuva AI for All</p>
+            <small>Issued: 16 Feb 2026</small>
+          </div>
         </div>
+
         <div class="cert-item reveal">
           <span class="cert-index">02</span>
-          <p>Basics of Python</p>
+          <div>
+            <p>Basics of Python</p>
+            <small>Issued: 29 Sep 2025</small>
+          </div>
         </div>
+
         <div class="cert-item reveal">
           <span class="cert-index">03</span>
-          <p>Introduction to Computer Architecture</p>
+          <div>
+            <p>Introduction to Computer Architecture</p>
+            <small>Issued: 4 Mar 2026</small>
+          </div>
         </div>
+
         <div class="cert-item reveal">
           <span class="cert-index">04</span>
-          <p>Introduction to Modern AI</p>
+          <div>
+            <p>Introduction to Modern AI</p>
+            <small>Completed: 17 Feb 2026</small>
+          </div>
         </div>
+
         <div class="cert-item reveal">
           <span class="cert-index">05</span>
-          <p>Programming in C</p>
+          <div>
+            <p>Programming in C</p>
+            <small>Issued: 1 Feb 2026</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificate-gallery">
+        <div class="certificate-card reveal">
+          <img src="images/cert-yuva-ai.jpg" alt="Yuva AI for All certificate" />
+          <h3>Yuva AI for All</h3>
+        </div>
+
+        <div class="certificate-card reveal">
+          <img src="images/cert-python.jpg" alt="Basics of Python certificate" />
+          <h3>Basics of Python</h3>
+        </div>
+
+        <div class="certificate-card reveal">
+          <img src="images/cert-computer-architecture.jpg" alt="Introduction to Computer Architecture certificate" />
+          <h3>Introduction to Computer Architecture</h3>
+        </div>
+
+        <div class="certificate-card reveal">
+          <img src="images/cert-modern-ai.jpg" alt="Introduction to Modern AI certificate" />
+          <h3>Introduction to Modern AI</h3>
+        </div>
+
+        <div class="certificate-card reveal">
+          <img src="images/cert-c-programming.jpg" alt="Programming in C certificate" />
+          <h3>Programming in C</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="section contact-section" id="contact">
     <div class="container contact-grid">
       <div class="contact-text reveal">
         <p class="section-tag">Contact</p>
         <h2 class="section-title">Let’s connect</h2>
         <p class="section-description">
-          I’m open to internships, placement opportunities, and learning-focused developer roles.
+          I’m open to internships, placement opportunities, and learning-focused software development roles.
         </p>
 
         <div class="contact-list">
-          <a href="tel:9730580488" class="contact-item">
+          <a href="tel:_________" class="contact-item">
             <span class="contact-label">Phone</span>
             <span class="contact-value">_________</span>
           </a>
 
-          <a href="mailto:houshettisneha@gmail.com" class="contact-item">
+          <a href="mailto:_________" class="contact-item">
             <span class="contact-label">Email</span>
             <span class="contact-value">_________</span>
           </a>
 
-          <a href="https://github.com/https://github.com/Senha-11" target="_blank" class="contact-item">
+          <a href="https://github.com/_________" target="_blank" class="contact-item">
             <span class="contact-label">GitHub</span>
             <span class="contact-value">github.com/_________</span>
           </a>
@@ -248,9 +368,9 @@
 
       <div class="contact-card reveal">
         <div class="contact-card-inner">
-          <p class="contact-note">Available for</p>
-          <h3>Placements, internships, and collaborative learning opportunities.</h3>
-          <a href="mailto:houshettisneha@gmail.com" class="btn btn-primary">Send an Email</a>
+          <p class="contact-note">Open to</p>
+          <h3>Internships, placements, and opportunities to learn and grow as a developer.</h3>
+          <a href="mailto:_________" class="btn btn-primary">Send an Email</a>
         </div>
       </div>
     </div>
@@ -266,7 +386,6 @@
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
