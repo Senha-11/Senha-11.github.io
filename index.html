@@ -1,71 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sneha Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha | Aspiring Software Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">Sneha</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Decorative Background Elements -->
+  <div class="bg-shape shape-top-left"></div>
+  <div class="bg-shape shape-bottom-right"></div>
+  <div class="bg-lines lines-top-right"></div>
+  <div class="bg-lines lines-bottom-left"></div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
+  <!-- Navbar -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Sneha</a>
 
-  <div class="hero-content">
-    <h1>Career<br>Highlights</h1>
-    <p>Aspiring Software Developer</p>
-    <button onclick="scrollToContact()">Contact Me</button>
-  </div>
-</section>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About</h2>
-  <p>
-    I am a BCA student with interest in programming and web development.
-    I have knowledge of C programming, DBMS, and web technologies.
-    Currently learning Node.js and MongoDB.
-  </p>
-</section>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
 
-  <div class="project-card">
-    <h3>Online Quiz Application</h3>
-    <p>Built using HTML, CSS, JavaScript, Python. Stores scores in Excel.</p>
-  </div>
+    <div class="container hero-content">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Personal Portfolio</p>
+        <h1>Sneha</h1>
+        <h2>Aspiring Software Developer</h2>
+        <p class="hero-description">
+          BCA student passionate about programming, web development, and building a strong foundation in software engineering.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-secondary">View Work</a>
+        </div>
+      </div>
 
-  <div class="project-card">
-    <h3>C Programming Practice</h3>
-    <p>Factorial, max number, array operations.</p>
-  </div>
-</section>
+      <div class="hero-profile reveal">
+        <div class="frame-card">
+          <div class="profile-placeholder">
+            <div class="profile-inner">
+              <span>Profile Image</span>
+              <small>Add your photo here</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Phone: _________</p>
-  <p>Email: _________</p>
-  <p>GitHub: _________</p>
-</section>
+    <div class="star star-1">✦</div>
+    <div class="star star-2">✦</div>
+    <div class="star star-3">✦</div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- About Section -->
+  <section class="section section-light" id="about">
+    <div class="container split-layout">
+      <div class="section-text reveal">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">A thoughtful start in software development</h2>
+        <p class="section-description">
+          I am a BCA student with a strong interest in programming and web development.
+          I have knowledge of C programming, DBMS, and basic web technologies. I enjoy
+          learning how software works and building simple, meaningful projects that improve
+          my practical understanding.
+        </p>
+        <p class="section-description">
+          Currently, I am expanding my skills by learning <strong>Node.js</strong> and
+          <strong>MongoDB</strong>, with the goal of becoming a confident full-stack developer
+          ready for real-world opportunities and placement roles.
+        </p>
+      </div>
+
+      <div class="section-visual reveal">
+        <div class="framed-visual about-visual">
+          <div class="visual-content">
+            <span>Developer Journey</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="star section-star">✦</div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-accent" id="projects">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <p class="section-tag">Projects</p>
+        <h2 class="section-title">Selected work and practice builds</h2>
+        <p class="section-description narrow">
+          A mix of academic and hands-on projects that reflect my learning in programming,
+          logic building, and web development fundamentals.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <h3>Online Quiz Application</h3>
+          <p>
+            Built using HTML, CSS, JavaScript, and Python. The application allows users
+            to attempt quizzes and stores user scores in Excel for result tracking.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3>C Programming Practice Programs</h3>
+          <p>
+            A collection of C programs including factorial calculation, maximum number finding,
+            and array operations to strengthen logic building and problem-solving basics.
+          </p>
+          <div class="project-tags">
+            <span>C</span>
+            <span>Logic</span>
+            <span>Arrays</span>
+            <span>Practice</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-light" id="skills">
+    <div class="container split-layout reverse-mobile">
+      <div class="section-visual reveal">
+        <div class="framed-visual skills-visual">
+          <div class="visual-content">
+            <span>Core Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-text reveal">
+        <p class="section-tag">Skills</p>
+        <h2 class="section-title">Technical foundation with growing depth</h2>
+        <div class="skills-list">
+          <span class="skill-pill">C Programming</span>
+          <span class="skill-pill">Python (Basic)</span>
+          <span class="skill-pill">JavaScript (Basic)</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">DBMS</span>
+          <span class="skill-pill">Embedded Systems (Basics)</span>
+          <span class="skill-pill">Node.js (Learning)</span>
+          <span class="skill-pill">MongoDB (Learning)</span>
+        </div>
+      </div>
+    </div>
+    <div class="star section-star star-right">✦</div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section section-accent" id="certifications">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-tag">Certifications</p>
+        <h2 class="section-title">Courses and learning milestones</h2>
+      </div>
+
+      <div class="certification-list">
+        <div class="cert-item reveal">
+          <span class="cert-index">01</span>
+          <p>Yuva AI for All</p>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-index">02</span>
+          <p>Basics of Python</p>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-index">03</span>
+          <p>Introduction to Computer Architecture</p>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-index">04</span>
+          <p>Introduction to Modern AI</p>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-index">05</span>
+          <p>Programming in C</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-text reveal">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let’s connect</h2>
+        <p class="section-description">
+          I’m open to internships, placement opportunities, and learning-focused developer roles.
+        </p>
+
+        <div class="contact-list">
+          <a href="tel:_________" class="contact-item">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">_________</span>
+          </a>
+
+          <a href="mailto:_________" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">_________</span>
+          </a>
+
+          <a href="https://github.com/_________" target="_blank" class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/_________</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="contact-card-inner">
+          <p class="contact-note">Available for</p>
+          <h3>Placements, internships, and collaborative learning opportunities.</h3>
+          <a href="mailto:_________" class="btn btn-primary">Send an Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="star star-contact">✦</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Sneha. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
